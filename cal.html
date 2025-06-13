@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pastel Calculator</title>
+  <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="pastel pink">C</button>
+      <button onclick="append('%')" class="pastel yellow">%</button>
+      <button onclick="append('/')" class="pastel purple">÷</button>
+      <button onclick="append('*')" class="pastel purple">×</button>
+
+      <button onclick="append('7')" class="pastel yellow">7</button>
+      <button onclick="append('8')" class="pastel yellow">8</button>
+      <button onclick="append('9')" class="pastel yellow">9</button>
+      <button onclick="append('-')" class="pastel purple">−</button>
+
+      <button onclick="append('4')" class="pastel green">4</button>
+      <button onclick="append('5')" class="pastel green">5</button>
+      <button onclick="append('6')" class="pastel green">6</button>
+      <button onclick="append('+')" class="pastel purple">+</button>
+
+      <button onclick="append('1')" class="pastel pink">1</button>
+      <button onclick="append('2')" class="pastel pink">2</button>
+      <button onclick="append('3')" class="pastel pink">3</button>
+      <button onclick="calculate()" class="pastel blue">=</button>
+
+      <button onclick="append('0')" class="pastel blue wide">0</button>
+      <button onclick="append('.')" class="pastel blue">.</button>
+    </div>
+  </div>
+  <script src="cal.js"></script>
+</body>
+</html>
